@@ -8,6 +8,12 @@
 
 5.times do |n|
   Post.create!(
-      content: "今日も暇人 #{n+1}日目"
+      content: "今日も暇人 #{n + 1}日目"
+  )
+end
+
+Post.all.each do |post|
+  post.photos.create!(
+      image: 'イメージのURL'
   )
 end
