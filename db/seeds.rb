@@ -14,6 +14,6 @@ end
 
 Post.all.each do |post|
   post.photos.create!(
-      image: 'イメージのURL'
+      url: 'イメージのURL'
   )
 end
